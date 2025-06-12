@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Impact;
+}
+
+header {
+    background-color: coral;
+    padding: 20px 30px; 
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0; /* Asegura que el header esté en la parte superior */
+    opacity: 0.9;
+    z-index: 5;
+}
+
+header:hover{
+    opacity: 1;
+}
+
+.divear {
+    display: flex;
+    align-items: center; 
+}
+
+.diveado {
+    display: flex;
+    align-items: center; 
+}
+
+header div img {
+    width: 80px; 
+    margin-right: 15px;
+}
+
+header div h2 {
+    font-size: 24px;
+    color: rgb(85, 39, 39);
+    font-family: "Pacifico",Tahoma;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+nav>ul li {
+    list-style: none;
+    padding: 10px;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(85, 39, 39);
+    padding: 5px;
+    display: block;
+}
+
+a:hover {
+    color: aqua;
+    background-color: blueviolet;
+}
+
+body {
+    margin-top: 80px; /* Ajusta el contenido para que no quede oculto debajo del header fijo */
+    background-image: url("../img/luffy.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3{
+    font-size: 60px;
+    font-family: Tahoma;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    color: rgb(85, 39, 39);
+}
+
+main{
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    margin-top: 70px;
+    background-color: coral;
+    padding: 70px;
+    color:rgb(85, 39, 39);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    opacity: 0.9;
+}
+
+footer:hover{
+    opacity: 1;
+}
+
+div.social{
+    display: flex;
+}
+
+.social i{
+    font-size: 30px;
+    margin: 10px;
+}
+
+/*Contenido de la web manga */
+
+section{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;
+    flex-direction: column;
+    border-radius: 2%;
+    width: 80%;
+}
+
+
+.titular{
+    margin: 111px;
+    margin-bottom: 20px;
+    background-color: coral;
+    width: 65%;
+    text-align: center;
+    color:rgb(85, 39, 39);
+    opacity: 0.9;
+    padding: 30px;
+}
+
+.titular:hover{
+    opacity: 1;
+}
+
+div>h2{
+    margin: 30px;
+    margin-bottom: 5px;
+    font-family: "Pacifico",tahoma;
+    color:rgb(85, 39, 39);
+    text-decoration: underline;
+}
+.mangasdiv{
+    background-color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 0px;
+    margin-bottom: 98px;
+
+}
+
+.mangasdiv div{
+    display: flex;
+    flex-direction: column;    
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    padding: 3px;
+    border-radius: 5px;
+    width: 29%;
+    margin-top: 40px;
+    transition: transform 0.3s ease; 
+    color:rgb(85, 39, 39);
+    margin-right: 18px;
+    margin-left: 18px;
+}
+
+.mangasdiv div:hover{
+    transform: scale(1.1);
+}
+.mangasdiv div img{
+    height: 490px;
+}
+
+section>div>div>ul{
+    list-style: none;
+}
+
+ul+button{
+    background-color:coral;
+    color:rgb(85, 39, 39);
+    height: 50px;
+    border: 0;
+    margin-top: 12px;
+}
+
+button:active{
+    background-color: rgb(85, 39, 39);
+    color:coral;
+}
+
+
+/* Media Query para pantallas pequeñas (menos de 768px) */
+@media (max-width: 768px) {
+    .mangasdiv div {
+        width: 90%; /* Un div por fila */
+    }
+
+    /* Ajustar el tamaño de la imagen para pantallas pequeñas */
+    .mangasdiv div img {
+        height: 350px; /* Reducir la altura de las imágenes en pantallas pequeñas */
+    }
+}

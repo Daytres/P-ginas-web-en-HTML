@@ -1,0 +1,308 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Impact;
+}
+
+header {
+    background-color: coral;
+    padding: 20px 30px; 
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0; /* Asegura que el header esté en la parte superior */
+    z-index: 5; /* Asegura que el header esté encima de todo, porque sino el hover se pone encima */
+
+}
+
+.divear {
+    display: flex;
+    align-items: center; 
+}
+
+.diveado {
+    display: flex;
+    align-items: center; 
+}
+
+header div img {
+    width: 80px; 
+    margin-right: 15px;
+}
+
+header div h2 {
+    font-size: 24px;
+    color: rgb(85, 39, 39);
+    font-family: Tahoma;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(85, 39, 39);
+    padding: 5px;
+    display: block;
+}
+
+a:hover {
+    color: aqua;
+    background-color: blueviolet;
+}
+
+body {
+    margin-top: 80px; /* Ajusta el contenido para que no quede oculto debajo del header fijo */
+    background-color: rgb(252, 200, 181);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h3{
+    font-size: 60px;
+    font-family: Tahoma;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    color: rgb(85, 39, 39);
+}
+
+main{
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titu{
+    background-color: rgb(180, 90, 58);
+    font-size: 30px;
+    font-family: Tahoma;
+    padding: 30px;
+    color:rgb(70, 16, 16);
+}
+
+tr.titudos>th{
+    font-family: Tahoma;
+    color:rgb(70, 16, 16);
+}
+
+td:nth-child(2){
+    background-color: rgb(233, 175, 154);
+    color:rgb(70, 16, 16);
+}
+table{
+    border: 3px solid coral ;
+    width: 60%;
+    border-collapse: collapse; /* Opcional: hace que los bordes se fusionen */
+    box-shadow: 5px 6px 10px 1px rgb(58, 58, 116);
+}
+
+th{
+    background-color: coral;
+    padding: 10px;
+
+    padding: 8px; /* Añade algo de espacio dentro de las celdas */
+}
+
+td{
+    font-family: Georgia;
+    margin-right: 100px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding: 8px; /* Añade algo de espacio dentro de las celdas */
+    border-top: 2px solid coral; /* Borde superior */
+    border-bottom: 2px solid coral; /* Borde inferior */
+}
+tr:hover td{
+    background-color: rgb(245, 119, 73);
+    color:brown
+}
+
+table img:hover{
+    animation-duration: 3s;
+    animation-name: shake;
+}
+
+@keyframes shake {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+  }
+
+td>img{
+    width: 130px;
+    display: flex;
+    align-items: end;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+footer{
+    margin-top: 70px;
+    background-color: coral;
+    padding: 70px;
+    color:rgb(85, 39, 39);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+div.social{
+    display: flex;
+}
+
+.social i{
+    font-size: 30px;
+    margin: 10px;
+}
+
+button{
+    background-color: coral;
+    font-family: Tahoma;
+    font-weight: bold;
+    color: brown;
+    border: 0px;
+    padding: 10px;
+    border-radius: 20%;
+    margin-top: 30px;
+}
+
+button:hover{
+    background-color: brown;
+    color:coral;
+}
+
+h1{
+    margin-left: 12px;
+    margin-bottom: 16px;
+}
+
+legend{
+        color:rgb(209, 87, 43);
+        margin-bottom: 10px;
+        text-decoration: underline;
+}
+
+optgroup {
+    color:grey;
+    font-family: 'Arial';
+}
+
+label{
+    margin-bottom: 6px;
+}
+
+
+main{
+    border: solid coral 4px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: aliceblue;
+    color:coral;
+    padding-top: 3%;
+
+
+}
+
+article{
+
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+form{
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+}
+
+input,textarea,select{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+input[type="checkbox"]{
+    accent-color: green;
+}
+
+input[type="radio"]{
+    accent-color: rgb(209, 37, 172);
+}
+
+.cajagorda{
+    height: 110px;
+}
+
+
+
+.mueve{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 200px;
+}
+
+.boton{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+button{
+    display: flex;
+    background-color:coral;
+    color: rgb(173, 63, 23);
+    border-color: rgb(218, 97, 53);
+    border-radius: 10px;
+    width: 80px;
+    height: 40px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.consentimiento{
+    color: rgb(66, 66, 175);
+}
+
+input, textarea,option {
+    font-family:'Lucida Sans';
+    color: gray;
+  }
