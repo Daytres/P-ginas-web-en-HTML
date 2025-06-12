@@ -1,0 +1,123 @@
+body{
+    margin:0px;
+    background: linear-gradient(orange,salmon);
+    color:aliceblue;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /*libro */
+    background-color: salmon;
+    padding-bottom: 10px;
+    font-family: Emblema One;
+    font-size: 20px;
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: salmon;
+    height: 80px;
+}
+
+.emblema-one-regular {
+    font-family: "Emblema One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+img[src="logosol.png"]{
+    width: 100px;
+}
+
+img[src="letraslogo.png"]{
+    width: 260px;
+    margin-left: 312px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    height: 1200px;
+}
+
+input, textarea, select{
+    background-color: rgb(224, 186, 115);
+    color:rgb(240, 90, 73);
+    margin: 10px;
+    border-radius: 4%;
+    resize: none; /* Deshabilita el redimensionamiento */
+    border:none;
+}
+.observar{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    margin-top: 20px;
+    background-color: salmon;
+    color: white;
+    border-bottom-style: none;
+    border-radius: 20px;
+    border: 2px rgb(255, 255, 255) solid;
+    width: 90px;
+    height: 40px;
+}
+
+li:hover{
+    color: aqua;
+}
+
+
+
+/* Estilo del fieldset */
+fieldset {
+    border: 2px solid #ffffff; /* Cambia el color y grosor del borde */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px 0; /* Espaciado externo */
+  }
+  
+  /* Estilo de la leyenda (legend) */
+  legend {
+    font-weight: bold; /* Fuente en negrita */
+    font-size: 1.2em; /* Tamaño de la fuente */
+  }
+
+  fieldset > fieldset{
+    color: rgb(165, 66, 55);
+    border: 2px solid rgb(165, 66, 55);
+  }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+    accent-color: rgb(165, 66, 55);
+
+}
+
+
+  /* Copiado de Alba, para validaciones */
+
+  .error{
+    color: red;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  input[type="text"].is-invalid, input[type="number"].is-invalid, fieldset.is-invalid, select.is-invalid{
+    border: 2px solid red;
+  }

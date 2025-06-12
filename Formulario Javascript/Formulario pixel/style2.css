@@ -1,0 +1,156 @@
+body{
+    margin:0px;
+    color:aliceblue;
+    padding: 0;
+    display: flex; /* Tuve que poner esto para quitar el margen del Footer, tengo que preguntar*/
+    flex-direction: column;/* Tuve que poner esto para quitar el margen del Footer, tengo que preguntar*/
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(#a415e6,salmon,#bbea8c);
+    box-shadow: 0 20px 12px rgba(0, 0, 0, 0.1); /* Sombra */
+    position: fixed;
+    width: 100%;
+    font-family: "Pixelify Sans";
+}
+
+        /* Animación de balanceo */
+        @keyframes balanceo {
+            0% {
+                transform: rotate(-10deg); /* Comienza en un lado */
+            }
+            50% {
+                transform: rotate(10deg); /* Se mueve al otro lado */
+            }
+            100% {
+                transform: rotate(-10deg); /* Vuelve al lado original */
+            }
+        }
+
+        .copa:hover {
+            animation: balanceo 1s ease-in-out infinite; /* Anima el balanceo de lado a lado */
+        }
+
+        nav ul li:hover {
+        transform: scale(1.2); /* Aplica un zoom de 1.2 veces el tamaño original */
+        transition: transform 0.3s ease; /* Suaviza la animación del zoom */
+        }
+        
+
+/*****************Tipos de letra ********************/
+.pixelify-sans-prueba{
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+  }
+
+.tiny5-regular {
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/**************************************************/
+
+img[src="vahalla.png"]{
+    padding-left: 360px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+li{
+    margin: 10px;
+}
+li:hover{
+    color: #bbea8c;
+}
+
+
+img{
+    height: 100px;
+}
+
+/************************formulario*********************************/
+
+nav+div{
+    display:flex;
+    justify-content: center;
+    background: linear-gradient(#a415e6,salmon,#bbea8c);
+    height: 710px;
+    color:#78269e;
+    
+}
+
+fieldset {
+    border: 3px solid #bbea8c; /* Cambia el color y grosor del borde */
+    padding: 20px; /* Espaciado interno */
+  }
+
+label,input{
+    display: block;
+}
+
+form{
+    margin-top: 160px;
+}
+
+input, textarea, select{
+    background-color: #bbea8c;
+    color:rgb(240, 90, 73);
+    border:none;
+}
+
+
+button{
+    background-color: #bbea8c;
+    color:#78269e;
+    border: 2px #78269e inset ;
+    margin-top: 30px;
+    
+}
+
+button:active{
+    background-color: #78269e;
+    color:#bbea8c;
+}
+
+
+/*****Div Caixa máxica******/
+
+#caixaMensaxes{
+    background-color: #78269e;
+    background-image: url('fondo.gif');
+    text-align: center;
+}
+
+
+/********************footer**************************************/
+
+footer{
+    background: linear-gradient(salmon,#a415e6,#bbea8c);
+    font-family: "Pixelify Sans";
+    text-align: center;
+    margin: 0;
+    height: 70px;
+}
+
+
+  /* Alertas para el javascript */
+
+  .error{
+    color: salmon ;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  input[type="text"].is-invalid, input[type="number"].is-invalid, fieldset.is-invalid, select.is-invalid{
+    border: 2px solid red;
+  }
+

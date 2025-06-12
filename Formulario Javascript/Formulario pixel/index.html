@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content=""/>
+    <link rel="stylesheet" href="style2.css">
+    <title>Validación en Javascript</title>
+    <script src="script.js" defer></script>
+    <link rel="icon" href="favicon.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Tiny5&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <img class="copa" src="logo.png" alt="logo del pub">
+        <img src="vahalla.png" alt="foto de letras pixel">
+
+        <ul>
+            <li>Inicio</li>
+            <li>Contacto</li>
+            <li>Formulario</li>
+            <li>Recomendados</li>
+        </ul>
+    </nav>
+    <div>
+        <form> <!--Puse el método, tengo que preguntar si había que ponerlo-->
+            <fieldset class="tiny5-regular">
+                <legend>Introduce os datos e pulsa Comprobar</legend>
+
+                <label for="dni">DNI:</label>
+                <input id="dni" type="text" name="dni" required/>
+
+                <label for="nome">Nome:</label>
+                <input id="nome" type="text" name="nome" required/>
+
+                <label for="idade">Data de Nacemento:</label>
+                <input id="idade" type="date" name="idade" required />
+
+                <label for="fillos">Número de fillos</label>
+                <input id="fillos" type="number" name="fillos" required/>
+
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" required/>
+
+                <label for="sitioweb">Páxina WEB:</label>
+                <input id="sitioweb" type="url" name="sitioweb"/>
+
+                <label for="passwd">Contrasinal:</label>
+                <input id="passwd" type="password" name="passwd"  required/>
+            </fieldset>
+
+            <button class="pixelify-sans-prueba" type="button">Comprobar</button>
+        </form>
+    </div>
+
+    <div id="caixaMensaxes" class="pixelify-sans-prueba"></div>
+
+    <footer>
+        <p>Ejercicio realizado según las póliticas estipuladas por David G.P</p>
+    </footer>
+    
+</body>
+</html>

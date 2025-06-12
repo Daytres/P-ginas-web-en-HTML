@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="contacto estrella galicia">
+    <meta name="description" content="Ponte en contacto con nosotros completando este formulario online o en por medio de las otras opciones de contacto que te damos en esta página.">
+    <meta name="template" content="page-content">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" sizes="32x32" href="favicon-32x32.png">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Atención al cliente | Estrella Galicia</title>
+</head>
+<body>
+
+    <main>
+        
+        <img src="icon-huebox-logo-es.svg">
+        <form action="" method="post">
+            <div class="boxNombre">
+                <input id="nombre"  name="nombre" placeholder="Nombre"></input>
+                <label for="nombre">Nombre</label> <!-- El for es obligatorio, es lo que permite asociar el label con el input -->
+            </div> <!-- El for es clave, sin el no se enfoca bien el input por culpa del label-->
+            <div class="boxApellidos">
+                <input id="apellidos" name="apellidos" placeholder="Apellidos"></input>
+                <label for="apellidos">Apellidos</label>
+            </div>
+            <div>
+                <input id="mail" name="mail" placeholder="Correo electrónico"></input>
+                <label for="mail">Correo electrónico</label>
+            </div>
+            <div>
+                <input id="mail2" name="mail2" placeholder="Confirmar correo electrónico"></input>
+                <label for="mail2">Confirmar</label>
+            </div>
+            <div>
+                <input id="postal" name="postal" placeholder="Código postal"></input>
+                <label for="postal">Código postal</label>
+            </div>
+            
+        </form>
+        <div class="box0">
+            <p>Campo obligatorio*</p>   
+            <hr>
+            <p>
+                Solo utilizaremos tu email para avisarte cuando el producto esté 
+                disponible y puedas ser de los primeros en conseguirlo. Si lo necesitas, 
+                puedes obtener más información sobre cómo ejercer tus derechos y sobre cómo tratamos 
+                tus datos en nuestra <a href="https://estrellagalicia.es/huebox/">Política de Privacidad</a>. 
+            </p>
+            <div class="box">
+                <input type="checkbox">
+                <p>Acepto las condiciones</p>
+            </div>
+           <button type="submit">Enviar</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

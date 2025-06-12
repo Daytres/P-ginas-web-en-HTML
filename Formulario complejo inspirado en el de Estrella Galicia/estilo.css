@@ -1,0 +1,186 @@
+body{
+    /*background: #161616;*/
+    background-image: linear-gradient(130deg,black, rgb(56, 53, 53),rgb(63, 64, 110), red, yellow);
+    font-family: "Libre Baskerville", serif;
+    font-size: 12px;
+   
+    
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+div{
+    width: 460px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+div:not(div[class="box"]):not(div[class="box0"]){
+    display: flex;
+    flex-direction: column;
+    height: 55px;
+    width: 460px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+/*input:not(input[type="checkbox"]){
+    height: 50px;
+    width: 460px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border:none;
+}
+
+input::placeholder {
+    color: #161616;
+    padding-left:50px;
+  }
+*/
+
+form > div{
+    display: flex;
+    justify-content: center; /* Lo hago para coicidan centrados el label y el input */
+    position: relative
+}
+
+.apellidos{
+    display: flex;
+    justify-content: center; /* Lo hago para coicidan centrados el label y el input */
+    position: relative
+}
+
+label{
+    position: absolute; /* Se posiciona encima del input */
+    top: 15px; /* Se coloca en el mismo sitio que el input */
+    left: 0;
+    z-index: 1; /* Asegura que el label esté por encima del input */
+    color: #161616; /* Ajuste de color */
+    transition: all 0.35s ease-in-out; 
+    padding-left: 26px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input:focus + label, input:not(:placeholder-shown) + label  { /*Puse el :not(:placeholder-shown) para que el label se mantenga arriba cuando el input tiene texto */
+    transform: translateY(-15px); /* Sube 15px  */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 2px;
+
+    &::after {
+        content: '*'; /* Necesario para que aparezca el pseudo-elemento */
+    }
+
+}
+
+
+
+input::placeholder{
+    display: none;
+    /* visibility: hidden;  Oculta el placeholder cuando el campo tiene el foco, lo sustiuí por el opacity */
+    opacity: 0;
+
+}
+
+div.invalido input::placeholder{ /* Para cambiar el placeholder de color, espero a que el div consiga la nueva clase*/
+    color: red;
+}
+
+input:focus::placeholder {
+    /*visibility: visible;*/
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    /*padding-left: 14px;*/
+}
+
+input:not([type="checkbox"]){
+    padding: 18px; /* Lo pongo para que no tenga que clickar en una zona concreta del input */
+    border: none; 
+    background: none;
+    outline: none; /* Elimina el borde de foco */
+}
+
+
+img{
+    height: 10%;
+    margin-bottom: 20px;
+}
+
+p{
+    color:#ffffff;
+    text-align: start;
+}
+
+.box{ /* Para el checkbox */
+    display: flex;
+    flex-direction: row;
+}
+
+hr + p > a{ /* Para el enlace de la política de privacidad */
+    color: #da291c;
+    text-decoration: none;
+}
+
+/* Tuve que rehacer el checkbox de cero para poder cambiar el estilo */
+
+input[type="checkbox"]{
+    appearance: none;  /* Elimina el estilo predeterminado del checkbox, me borró todo */
+    accent-color: #da291c;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    width: 15px;  /* Ajusta el tamaño del checkbox */
+    height: 15px; 
+    border-radius: 4px;  /* Esquinas redondeadas */
+    background-color: transparent; /* Fondo transparente */
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #da291c; /* Color de fondo cuando está seleccionado */
+}
+
+input[type="checkbox"]:checked::before {
+    content: '✔'; /* Añade un icono o marca cuando se selecciona */
+    position: absolute;
+    right: 1px;
+    top:-3px;
+    color: white; /* Color de la marca de verificación */
+}
+
+button{
+    background-color: #da291c;
+    color:#ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 150px;
+    height: 43px;
+    width: 130px;
+}
+
+
+/* Errores que se aplican cuando válida en el js*/
+.invalido{
+    border: 1px solid #da291c;
+    background-color: rgb(238, 141, 141);
+}
+
+.error{
+    color: #da291c;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  

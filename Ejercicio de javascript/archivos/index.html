@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>UF1305</title>
+
+</head>
+<body>
+    <header>
+        <div>
+            <h1>E2 UF1305</h1>
+        </div>
+    <nav>
+        <ul class="menu">
+            <li><a href= #condicionales>Condicionales</a></li>
+            <li class="dropdown">
+                
+                
+                <a href="#bucles">Bucles</a>
+                    <ul class="submenu">
+                        <li><a href="#ejercicio2.1">Ejercicio 2.1</a></li>
+                        <li><a href="#ejercicio2.2">Ejercicio 2.2</a></li>
+                        <li><a href="#ejercicio2.3">Ejercicio 2.3</a></li>
+                        </li>
+                    </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#dom">DOM</a>
+                    <ul class="submenu">
+                        <li><a href="#ejercicio3.1">Ejercicio 3.1</a></li>
+                        <li><a href="#ejercicio3.2">Ejercicio 3.2</a></li>
+                        <li><a href="#ejercicio3.3">Ejercicio 3.3</a></li>
+                    </ul>
+            </li>
+
+        </ul>
+    </nav>
+    </header>
+
+
+    <main class="main">
+        
+        <!--Ejercicio 1-->
+        <section id="condicionales"> 
+            <h2>Ejercicio 1</h2>
+            <label>Pon 3 notas de un alumnos</label>
+            <input type="number" class="nota1">
+            <input type="number" class="nota2">
+            <input type="number" class="nota3">
+            <button type="submit" class="botonnotas">Pulsar</button>
+            <p class="resultado"></p>
+
+        
+        </section>
+
+        <!--<div id="bucles">--><!-- No me funciona esto, busco que aparezcan todos ejercicios 2 juntos -->
+            <!--Ejercicio 2.1-->
+            <section id="ejercicio2.1">
+                <h2>Ejercicio 2.1</h2>
+                <label>Clicka para ver los múltiplos de 5 con <u>FOR</u></label>
+                <button type="submit" class="boton5">Pulsar</button>
+                <p class="t100x5"></p>
+            
+            </section>
+
+            <!--Ejercicio 2.2-->
+            <section id="ejercicio2.2">
+                <h2>Ejercicio 2.2</h2>
+                <label>Es igual al anterior ejecicio pero utilizando <u>DO WHILE</u></label>
+                <button type="submit" class="botondowhile">Pulsar</button>
+                <p class="textdowhile"></p>
+            </section>
+
+            <!--Ejercicio 2.3-->
+            <section id="ejercicio2.3">
+                <h2>Ejercicio 2.3</h2>
+                <label>Resta 20 a 320 hasta llegar a 160 con <u>WHILE</u></label>
+                <button type="submit" id="boton23">Pulsar</button>
+                <p class="menos320"></p>
+            </section>
+        <!--</div>-->
+
+        <!--Ejercicio 3.1-->
+        <section id="ejercicio3.1">
+            <h2>Ejercicio 3.1</h2>
+            <label>Programa para sumar,restar,dividar y multiplicar</label>
+            <input type="number" id="factorA">
+            <input type="number" id="factorB">
+            <button type="submit" id="botoncalcular">Pulsar</button>
+            <p id="calculador"></p>
+            <p id="calculador1"></p>
+            <p id="calculador2"></p>
+            <p id="calculador3"></p>
+        </section>
+
+        <!--Ejercicio 3.2-->
+        <section id="ejercicio3.2">
+            <h2>Ejercicio 3.2</h2>
+            <h3>Programa para recoger  tus datos</h3>
+            <label>Nombre</label>
+            <input type="text" id="name" placeholder="Manolo">
+            <label>Apellidos</label>
+            <input type="text"  id="surname" placeholder="Lopéz Santos">
+            <label>Correo electrónico</label>
+            <input type="email" id="email" placeholder="Manolo@gmail.com" required>
+            <button type="submit" id="botondatos">Pulsar</button>
+            <p id="tabla"></p>
+        </section>
+
+        <!--Ejercicio 3.3-->
+        <section id="ejercicio3.3">
+            <h2>Ejercicio 3.3</h2>
+            <h3>Programa del ejercicio 2 pero con generador de usuario</h3>
+            <label>Nombre</label>
+            <input type="text" id="name0" placeholder="Manolo">
+            <label>Apellidos</label>
+            <input type="text"  id="surname0" placeholder="Lopéz Santos">
+            <label>Correo electrónico</label>
+            <input type="email" id="email0" placeholder="Manolo@gmail.com" required>
+            <button type="submit" id="botondatos0">Pulsar</button>
+            <p id="tabla0"></p>
+
+        </section>
+
+
+
+
+
+        <script src="script.js"></script>
+    </main>
+    <footer>
+        <h2>David Gondar Piñeiro</h2>
+    </footer>
+
+</body>
+</html>
